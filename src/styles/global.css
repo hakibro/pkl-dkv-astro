@@ -56,6 +56,6 @@ body {
 
 /* Active Dot Indicator */
 .active-dot {
-	background-color: #BFFF00 !important;
+	background-color: #bfff00 !important;
 	width: 1.5rem !important;
 }
