@@ -4,6 +4,10 @@ interface Props {
 }
 
 const { title = 'SAYGON x DISKOMVIS Creative Lab Pitch Deck' } = Astro.props;
+
+// Import styles properly for production build
+import '../styles/global.css';
+import '../styles/animations.css';
 ---
 
 <!DOCTYPE html>
@@ -26,10 +30,6 @@ const { title = 'SAYGON x DISKOMVIS Creative Lab Pitch Deck' } = Astro.props;
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   />
-  
-  <!-- Import Styles -->
-  <link rel="stylesheet" href="/src/styles/global.css" />
-  <link rel="stylesheet" href="/src/styles/animations.css" />
 </head>
 <body class="font-jakarta text-white bg-obsidian bg-grid">
   <slot />
