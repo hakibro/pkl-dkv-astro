@@ -60,9 +60,9 @@ function updateDots(): void {
 	const dots = document.querySelectorAll("#slideDots button");
 	dots.forEach((dot, index) => {
 		if (index === currentSlide - 1) {
-			dot.classList.add("active-dot");
+			dot.classList.add("active-dot", "bg-neonLime", "w-6");
 		} else {
-			dot.classList.remove("active-dot");
+			dot.classList.remove("active-dot", "bg-neonLime", "w-6");
 		}
 	});
 }

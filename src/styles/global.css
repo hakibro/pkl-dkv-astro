@@ -53,3 +53,9 @@ body {
 	flex-direction: column;
 	gap: 4rem;
 }
+
+/* Active Dot Indicator */
+.active-dot {
+	background-color: #BFFF00 !important;
+	width: 1.5rem !important;
+}
