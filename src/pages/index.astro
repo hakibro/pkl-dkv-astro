@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Slide01Cover from '../components/Slide01Cover.astro';
+import Slide02Foundation from '../components/Slide02Foundation.astro';
+import Slide03Problem from '../components/Slide03Problem.astro';
+import Slide04Paradigm from '../components/Slide04Paradigm.astro';
+import Slide05Workflow from '../components/Slide05Workflow.astro';
+import Slide06Units from '../components/Slide06Units.astro';
+import Slide07Deliverables from '../components/Slide07Deliverables.astro';
+import Slide08BenefitSaygon from '../components/Slide08BenefitSaygon.astro';
+import Slide09BenefitStudents from '../components/Slide09BenefitStudents.astro';
+import Slide10Closing from '../components/Slide10Closing.astro';
+---
+
+<BaseLayout title="SAYGON × DISKOMVIS Creative Lab | Internship Program Pitch Deck">
+  <Header />
+  
+  <main id="slidesContainer" class="slider-mode relative min-h-screen px-8 pt-24 pb-8 flex items-center justify-center">
+    <div class="slides-wrapper w-full max-w-7xl">
+      <Slide01Cover />
+      <Slide02Foundation />
+      <Slide03Problem />
+      <Slide04Paradigm />
+      <Slide05Workflow />
+      <Slide06Units />
+      <Slide07Deliverables />
+      <Slide08BenefitSaygon />
+      <Slide09BenefitStudents />
+      <Slide10Closing />
+    </div>
+  </main>
+  
+  <Footer />
+  
+  <script>
+    import { initSlideNavigation, changeSlide, jumpToSlide } from '../scripts/slideNavigation';
+    import { initViewMode } from '../scripts/viewMode';
+    
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      initSlideNavigation();
+      initViewMode();
+    });
+    
+    // Expose functions globally for inline onclick handlers
+    (window as any).changeSlide = changeSlide;
+    (window as any).jumpToSlide = jumpToSlide;
+  </script>
+</BaseLayout>

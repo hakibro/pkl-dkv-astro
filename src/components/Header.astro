@@ -1,0 +1,33 @@
+---
+interface Props {
+  currentSlide: number;
+  totalSlides: number;
+}
+
+const { currentSlide, totalSlides } = Astro.props;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center">
+  <button
+    id="viewModeToggle"
+    class="px-4 py-2 rounded-lg bg-cardDark/80 backdrop-blur-sm border border-white/5 text-sm font-medium hover:bg-cardDark hover:border-neonLime/50 transition-all"
+  >
+    <i class="fas fa-bars mr-2"></i>
+    <span id="viewModeText">Scroll Mode</span>
+  </button>
+
+  <div
+    id="slideCounter"
+    class="px-4 py-2 rounded-lg bg-cardDark/80 backdrop-blur-sm border border-white/5 text-sm font-mono"
+  >
+    <span id="currentSlideNum">{String(currentSlide).padStart(2, '0')}</span>
+    <span class="text-white/40 mx-1">/</span>
+    <span class="text-white/40">{String(totalSlides).padStart(2, '0')}</span>
+  </div>
+
+  <div class="text-sm font-outfit font-semibold tracking-wider">
+    <span class="text-neonLime">SAYGON</span>
+    <span class="text-white/40 mx-1">×</span>
+    <span class="text-neonIndigo">DISKOMVIS</span>
+  </div>
+</header>

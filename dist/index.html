@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="id"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SAYGON × DISKOMVIS Creative Lab | Internship Program Pitch Deck</title><!-- Google Fonts: Outfit (Agency Headings) & Plus Jakarta Sans (Clean Body) --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"><!-- FontAwesome for Premium Tech Icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><!-- Import Styles --><link rel="stylesheet" href="/src/styles/global.css"><link rel="stylesheet" href="/src/styles/animations.css"><link rel="stylesheet" href="/_astro/index.DfXJvzsq.css"><script type="module">let s=1;const n=10;function l(e){const i=document.querySelectorAll(".slide-frame");i[s-1],s+=e,s>n&&(s=1),s<1&&(s=n),i.forEach((t,o)=>{o===s-1?(t.classList.remove("inactive"),t.classList.add("active")):(t.classList.remove("active"),t.classList.add("inactive"))}),a(),r()}function d(e){if(e<1||e>n)return;const i=document.querySelectorAll(".slide-frame");s=e,i.forEach((t,o)=>{o===s-1?(t.classList.remove("inactive"),t.classList.add("active")):(t.classList.remove("active"),t.classList.add("inactive"))}),a(),r()}function a(){const e=document.getElementById("slideCounter");e&&(e.textContent=`${String(s).padStart(2,"0")}/${String(n).padStart(2,"0")}`)}function r(){document.querySelectorAll("#slideDots button").forEach((i,t)=>{t===s-1?i.classList.add("active-dot"):i.classList.remove("active-dot")})}function u(){const e=document.getElementById("slideDots");if(e){e.innerHTML="";for(let i=1;i<=n;i++){const t=document.createElement("button");t.className="w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 transition-all",i===s&&t.classList.add("active-dot","bg-neonLime","w-6"),t.onclick=()=>d(i),e.appendChild(t)}}}function m(){document.addEventListener("keydown",e=>{e.key==="ArrowRight"||e.key==="ArrowDown"?l(1):(e.key==="ArrowLeft"||e.key==="ArrowUp")&&l(-1)})}function v(){a(),u(),m()}let c=!1;function L(){const e=document.getElementById("slidesContainer"),i=document.getElementById("viewModeToggle");!e||!i||(c=!c,c?(e.classList.remove("slider-mode"),e.classList.add("scroll-mode"),i.innerHTML='<i class="fa-solid fa-table-cells"></i>',document.querySelectorAll(".slide-frame").forEach(o=>{o.classList.remove("inactive","active")})):(e.classList.remove("scroll-mode"),e.classList.add("slider-mode"),i.innerHTML='<i class="fa-solid fa-grip-lines"></i>',document.querySelectorAll(".slide-frame").forEach((o,f)=>{f===0?(o.classList.add("active"),o.classList.remove("inactive")):(o.classList.add("inactive"),o.classList.remove("active"))})))}function g(){const e=document.getElementById("viewModeToggle");e&&e.addEventListener("click",L)}document.addEventListener("DOMContentLoaded",()=>{v(),g()});window.changeSlide=l;window.jumpToSlide=d;
+</script></head> <body class="font-jakarta text-white bg-obsidian bg-grid">  <header class="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center"> <button id="viewModeToggle" class="px-4 py-2 rounded-lg bg-cardDark/80 backdrop-blur-sm border border-white/5 text-sm font-medium hover:bg-cardDark hover:border-neonLime/50 transition-all"> <i class="fas fa-bars mr-2"></i> <span id="viewModeText">Scroll Mode</span> </button> <div id="slideCounter" class="px-4 py-2 rounded-lg bg-cardDark/80 backdrop-blur-sm border border-white/5 text-sm font-mono"> <span id="currentSlideNum">undefined</span> <span class="text-white/40 mx-1">/</span> <span class="text-white/40">undefined</span> </div> <div class="text-sm font-outfit font-semibold tracking-wider"> <span class="text-neonLime">SAYGON</span> <span class="text-white/40 mx-1">×</span> <span class="text-neonIndigo">DISKOMVIS</span> </div> </header> <main id="slidesContainer" class="slider-mode relative min-h-screen px-8 pt-24 pb-8 flex items-center justify-center"> <div class="slides-wrapper w-full max-w-7xl"> <div class="slide-frame active w-full" id="slide-1" data-slide="0"> <div class="flex flex-col items-center justify-center text-center space-y-8 max-w-5xl mx-auto"> <!-- Logo as Main Focus - Large and Prominent --> <div class="logo-container animate-float opacity-0 animate-fade-in-down delay-100"> <img src="/images/logodiskomvisxsaygon.png" alt="DISKOMVIS x SAYGON Logo" class="w-96 md:w-[500px] h-auto animate-glow-pulse" style="filter: drop-shadow(0 15px 40px rgba(191, 255, 0, 0.4));"> </div> <!-- Hero Content Below Logo --> <div class="space-y-6"> <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neonLime/30 bg-neonLime/5 text-neonLime text-xs font-bold font-outfit uppercase tracking-widest opacity-0 animate-fade-in-up delay-200"> <i class="fa-solid fa-bolt"></i> Project-Based Industry Internship
+</span> <h1 class="font-outfit text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-none opacity-0 animate-fade-in-up delay-300">
+SAYGON × DISKOMVIS<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonLime via-cyan-400 to-neonIndigo">
+CREATIVE LAB
+</span> </h1> <p class="text-base md:text-lg lg:text-xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed opacity-0 animate-fade-in-up delay-400">
+Project-Based Industry Internship Program.
+<span class="text-white font-medium">Transforming Internship</span>
+Into Real Creative Industry Collaboration.
+</p> </div> <!-- Tags at Bottom --> <div class="pt-4 flex flex-wrap justify-center gap-3 opacity-0 animate-fade-in-up delay-500"> <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-300 hover-lift"> <i class="fa-solid fa-code text-neonLime mr-2"></i>Web Development
+</span> <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-300 hover-lift"> <i class="fa-solid fa-compass-drafting text-neonIndigo mr-2"></i>Graphic Design
+</span> <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-300 hover-lift"> <i class="fa-solid fa-camera text-neonCoral mr-2"></i>Photography
+</span> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-2" data-slide="1"> <div class="max-w-4xl space-y-8"> <div class="space-y-2"> <span class="text-xs font-bold text-neonIndigo uppercase tracking-widest font-mono">
+02 // The Foundation
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Why This Program Exists
+</h2> </div> <p class="text-xl md:text-2xl text-slate-300 leading-relaxed font-light">
+Program ini lahir dari kebutuhan untuk
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-neonLime to-emerald-400 font-semibold">
+menjembatani dunia pendidikan
+</span>
+dan industri kreatif secara nyata.
+</p> <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6"> <div class="p-8 rounded-2xl bg-cardDark border border-white/5 relative group hover-lift glow-lime"> <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-neonLime to-emerald-500 rounded-l"></div> <h3 class="font-outfit text-lg font-bold text-white mb-2 flex items-center gap-2"> <i class="fa-solid fa-arrows-spin text-neonLime text-base"></i>
+Ruang Kolaborasi
+</h3> <p class="text-sm text-slate-400 leading-relaxed">
+Platform strategis yang mempertemukan kebutuhan nyata industri
+          dengan energi serta talenta segar para insan muda kreatif.
+</p> </div> <div class="p-8 rounded-2xl bg-cardDark border border-white/5 relative group hover-lift glow-indigo"> <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-neonIndigo to-indigo-600 rounded-l"></div> <h3 class="font-outfit text-lg font-bold text-white mb-2 flex items-center gap-2"> <i class="fa-solid fa-lightbulb text-neonIndigo text-base"></i>
+Menghasilkan Solusi
+</h3> <p class="text-sm text-slate-400 leading-relaxed">
+Siswa tidak hanya pasif belajar teori, tetapi aktif
+          memproduksi solusi visual, digital, dan media fungsional demi
+          memecahkan problem riil industri.
+</p> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-3" data-slide="2"> <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"> <div class="lg:col-span-5 space-y-6"> <span class="text-xs font-bold text-neonCoral uppercase tracking-widest font-mono">
+03 // The Problem
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Problem PKL<br>Konvensional
+</h2> <p class="text-sm text-slate-400 leading-relaxed">
+Banyak program magang atau Praktek Kerja Lapangan (PKL) saat ini
+        masih terjebak dalam ekosistem pasif yang kurang menguntungkan
+        kedua belah pihak.
+</p> <div class="p-5 rounded-xl border border-neonCoral/20 bg-neonCoral/5 text-xs text-neonCoral flex gap-3 items-start"> <i class="fa-solid fa-triangle-exclamation text-sm mt-0.5"></i> <div> <span class="font-bold block mb-1">Dampak Utama:</span>
+Pengalaman industri tidak sepenuhnya terbentuk, melahirkan gap
+          kapabilitas yang besar saat lulus.
+</div> </div> </div> <div class="lg:col-span-7 space-y-3"> <div class="flex gap-4 items-center p-4 rounded-xl bg-cardDark/50 border border-white/5 hover-lift"> <span class="w-8 h-8 rounded-full bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xs font-mono font-bold shrink-0">1</span> <p class="text-sm text-slate-300"> <span class="text-white font-semibold">Observer Only</span> —
+          Siswa sering kali hanya menjadi observer atau helper
+          administratif saja.
+</p> </div> <div class="flex gap-4 items-center p-4 rounded-xl bg-cardDark/50 border border-white/5 hover-lift"> <span class="w-8 h-8 rounded-full bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xs font-mono font-bold shrink-0">2</span> <p class="text-sm text-slate-300"> <span class="text-white font-semibold">Irrelevansi Skill</span>
+— Tidak semua siswa mendapatkan tipe pekerjaan magang yang
+          relevan.
+</p> </div> <div class="flex gap-4 items-center p-4 rounded-xl bg-cardDark/50 border border-white/5 hover-lift"> <span class="w-8 h-8 rounded-full bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xs font-mono font-bold shrink-0">3</span> <p class="text-sm text-slate-300"> <span class="text-white font-semibold">No Practical Impact</span>
+— Hasil kerja siswa magang tidak selalu berdampak langsung
+          bagi kemajuan industri.
+</p> </div> <div class="flex gap-4 items-center p-4 rounded-xl bg-cardDark/50 border border-white/5 hover-lift"> <span class="w-8 h-8 rounded-full bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xs font-mono font-bold shrink-0">4</span> <p class="text-sm text-slate-300"> <span class="text-white font-semibold">Stagnasi Kreativitas</span>
+— Sangat minim proses kreatif terarah dan metode pemecahan
+          masalah (problem solving).
+</p> </div> <div class="flex gap-4 items-center p-4 rounded-xl bg-cardDark/50 border border-white/5 hover-lift"> <span class="w-8 h-8 rounded-full bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xs font-mono font-bold shrink-0">5</span> <p class="text-sm text-slate-300"> <span class="text-white font-semibold">No Real Project</span>
+— Aktivitas kerja harian yang tidak terintegrasi secara
+          sistematis dalam proyek nyata.
+</p> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-4" data-slide="3"> <div class="space-y-6 max-w-5xl"> <div class="flex justify-between items-end flex-wrap gap-4"> <div class="space-y-2"> <span class="text-xs font-bold text-neonLime uppercase tracking-widest font-mono">
+04 // The Paradigm Shift
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+New Model: Project-Based Internship
+</h2> </div> <span class="px-3.5 py-1.5 rounded bg-white/5 border border-white/10 text-xs font-bold text-slate-300 uppercase tracking-widest font-mono"> <i class="fa-solid fa-users-viewfinder text-neonLime mr-2"></i>Mini Creative Agency
+</span> </div> <p class="text-lg text-slate-300 font-light leading-relaxed">
+Model baru ini mengubah total cara kerja PKL konvensional dengan
+      mengadopsi struktur
+<span class="text-white font-semibold border-b border-neonLime">berbasis proyek nyata dari industri</span>. Siswa dikoordinir dan bekerja layaknya professional dalam
+      lingkup agensi kreatif skala mikro.
+</p> <!-- Flow Diagram --> <div class="pt-6 overflow-x-auto pb-4"> <div class="flex items-center min-w-[900px] justify-between px-2"> <!-- Step 1 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-neonLime">
+01
+</div> <span class="text-[11px] font-bold text-white tracking-wide uppercase">Industry Brief</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 2 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-slate-400">
+02
+</div> <span class="text-[11px] font-bold text-slate-400 tracking-wide uppercase">Creative Expl.</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 3 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-slate-400">
+03
+</div> <span class="text-[11px] font-bold text-slate-400 tracking-wide uppercase">Production</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 4 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-slate-400">
+04
+</div> <span class="text-[11px] font-bold text-slate-400 tracking-wide uppercase">Internal Rev.</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 5 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-neonIndigo">
+05
+</div> <span class="text-[11px] font-bold text-white tracking-wide uppercase">Pitching</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 6 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-white/10 bg-white/5 flex items-center justify-center font-mono text-xs font-bold text-slate-400">
+06
+</div> <span class="text-[11px] font-bold text-slate-400 tracking-wide uppercase">Feedback</span> </div> <div class="text-slate-700 font-light text-sm"> <i class="fa-solid fa-chevron-right"></i> </div> <!-- Step 7 --> <div class="flex flex-col items-center text-center space-y-2.5 w-24"> <div class="w-10 h-10 rounded-full border border-neonLime/30 bg-neonLime/10 flex items-center justify-center font-mono text-xs font-bold text-neonLime glow-lime">
+07
+</div> <span class="text-[11px] font-bold text-white tracking-wide uppercase">Final Delivery</span> </div> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-5" data-slide="4"> <div class="space-y-6"> <div class="space-y-2"> <span class="text-xs font-bold text-neonLime uppercase tracking-widest font-mono">
+05 // Operational Workflow
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Workflow Program
+</h2> </div> <!-- Horizontal Grid Timeline --> <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-4 pt-4"> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift glow-lime"> <span class="text-[10px] font-bold text-neonLime font-mono">STEP 01</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Industry Brief
+</h4> <p class="text-[11px] text-slate-400">
+Saygon memberikan tantangan &amp; studi kasus nyata.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift"> <span class="text-[10px] font-bold text-slate-500 font-mono">STEP 02</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Research &amp; Ide
+</h4> <p class="text-[11px] text-slate-400">
+Proses eksplorasi, riset pasar &amp; ide kreatif oleh siswa.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift"> <span class="text-[10px] font-bold text-slate-500 font-mono">STEP 03</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Production
+</h4> <p class="text-[11px] text-slate-400">
+Tahap produksi aset di sekolah menggunakan lab studio.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift"> <span class="text-[10px] font-bold text-slate-500 font-mono">STEP 04</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Quality Review
+</h4> <p class="text-[11px] text-slate-400">
+Guru bertindak sebagai Creative Director menguji standar.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift glow-indigo"> <span class="text-[10px] font-bold text-neonIndigo font-mono">STEP 05</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Pitching Session
+</h4> <p class="text-[11px] text-slate-400">
+Siswa mempresentasikan hasil kreasi di depan tim Saygon.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift"> <span class="text-[10px] font-bold text-slate-500 font-mono">STEP 06</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Bidding / Select
+</h4> <p class="text-[11px] text-slate-400">
+Kurasi karya terbaik dipilih langsung oleh industri.
+</p> </div> <div class="p-4 rounded-xl bg-cardDark border border-white/5 space-y-2 hover-lift glow-lime"> <span class="text-[10px] font-bold text-neonLime font-mono">STEP 07</span> <h4 class="font-outfit text-xs font-bold text-white uppercase">
+Revision &amp; Out
+</h4> <p class="text-[11px] text-slate-400">
+Penyempurnaan aset final yang siap didistribusikan.
+</p> </div> </div> <div class="pt-4 flex justify-between items-center text-xs text-slate-500 font-mono border-t border-white/5"> <span> <i class="fa-solid fa-circle-nodes text-neonLime mr-2"></i>Professional Standard
+</span> <span>
+Seluruh alur merefleksikan alur kerja industri kreatif profesional
+</span> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-6" data-slide="5"> <div class="space-y-8"> <div class="space-y-2"> <span class="text-xs font-bold text-neonIndigo uppercase tracking-widest font-mono">
+06 // Division Scope
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Creative Units
+</h2> <p class="text-sm text-slate-400 max-w-xl">
+Program kolaborasi ini didukung penuh oleh 3 sub-divisi utama
+        penunjang transformasi digital:
+</p> </div> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <!-- Unit 1: Web Development --> <div class="p-6 rounded-2xl bg-cardDark border border-white/5 hover-lift glow-lime"> <div class="w-12 h-12 rounded-lg bg-neonLime/10 text-neonLime flex items-center justify-center text-xl mb-4 font-bold"> <i class="fa-solid fa-code"></i> </div> <h3 class="font-outfit font-bold text-lg text-white mb-3">
+Web Development
+</h3> <ul class="space-y-2 text-xs text-slate-400"> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonLime text-[9px]"></i>
+Landing page campaign
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonLime text-[9px]"></i>
+Microsite event
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonLime text-[9px]"></i>
+Company profile website
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonLime text-[9px]"></i>
+Integrasi sistem sederhana
+</li> </ul> </div> <!-- Unit 2: Graphic Design --> <div class="p-6 rounded-2xl bg-cardDark border border-white/5 hover-lift glow-indigo"> <div class="w-12 h-12 rounded-lg bg-neonIndigo/10 text-neonIndigo flex items-center justify-center text-xl mb-4 font-bold"> <i class="fa-solid fa-palette"></i> </div> <h3 class="font-outfit font-bold text-lg text-white mb-3">
+Graphic Design
+</h3> <ul class="space-y-2 text-xs text-slate-400"> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonIndigo text-[9px]"></i>
+Pengembangan branding visual
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonIndigo text-[9px]"></i>
+Campaign design &amp; promotion
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonIndigo text-[9px]"></i>
+Social media content production
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonIndigo text-[9px]"></i>
+Event publication asset
+</li> </ul> </div> <!-- Unit 3: Photography --> <div class="p-6 rounded-2xl bg-cardDark border border-white/5 hover-lift glow-coral"> <div class="w-12 h-12 rounded-lg bg-neonCoral/10 text-neonCoral flex items-center justify-center text-xl mb-4 font-bold"> <i class="fa-solid fa-camera"></i> </div> <h3 class="font-outfit font-bold text-lg text-white mb-3">
+Photography
+</h3> <ul class="space-y-2 text-xs text-slate-400"> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonCoral text-[9px]"></i>
+Dokumentasi event &amp; destinasi
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonCoral text-[9px]"></i>
+Visual asset production
+</li> <li class="flex items-center gap-2"> <i class="fa-solid fa-chevron-right text-neonCoral text-[9px]"></i>
+Photo library untuk kebutuhan industri
+</li> </ul> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-7" data-slide="6"> <div class="space-y-6"> <div class="flex justify-between items-end flex-wrap gap-4"> <div class="space-y-2"> <span class="text-xs font-bold text-neonLime uppercase tracking-widest font-mono">
+07 // Tangible Output
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Deliverables (Hasil Nyata)
+</h2> </div> <span class="text-xs text-slate-500 font-mono"> <i class="fa-solid fa-circle-check text-neonLime mr-2"></i>Semua output dapat langsung digunakan oleh industri
+</span> </div> <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4"> <!-- Digital Assets --> <div class="p-6 rounded-2xl bg-gradient-to-br from-cardDark to-cardDark/40 border border-white/5 flex flex-col justify-between min-h-[220px] hover-lift glow-lime"> <div class="space-y-3"> <span class="text-xs font-mono font-bold text-neonLime uppercase tracking-wider">
+01 / Code &amp; Web
+</span> <h3 class="font-outfit text-xl font-bold text-white">
+Digital Assets
+</h3> <p class="text-xs text-slate-400 leading-relaxed">
+Website landing page responsif, microsite kampanye promosi,
+            dan portal digital siap hosting.
+</p> </div> <div class="pt-4 border-t border-white/5 flex justify-between items-center text-[10px] text-slate-500"> <span>Deployment Ready</span> <i class="fa-solid fa-cloud-arrow-up text-neonLime"></i> </div> </div> <!-- Visual Assets --> <div class="p-6 rounded-2xl bg-gradient-to-br from-cardDark to-cardDark/40 border border-white/5 flex flex-col justify-between min-h-[220px] hover-lift glow-indigo"> <div class="space-y-3"> <span class="text-xs font-mono font-bold text-neonIndigo uppercase tracking-wider">
+02 / Design
+</span> <h3 class="font-outfit text-xl font-bold text-white">
+Visual Assets
+</h3> <p class="text-xs text-slate-400 leading-relaxed">
+Paket lengkap berisi 30–50 aset desain publikasi digital
+            &amp; brand campaign material yang orisinal.
+</p> </div> <div class="pt-4 border-t border-white/5 flex justify-between items-center text-[10px] text-slate-500"> <span>High Resolution</span> <i class="fa-solid fa-image text-neonIndigo"></i> </div> </div> <!-- Media Assets --> <div class="p-6 rounded-2xl bg-gradient-to-br from-cardDark to-cardDark/40 border border-white/5 flex flex-col justify-between min-h-[220px] hover-lift glow-coral"> <div class="space-y-3"> <span class="text-xs font-mono font-bold text-neonCoral uppercase tracking-wider">
+03 / Capture
+</span> <h3 class="font-outfit text-xl font-bold text-white">
+Media Assets
+</h3> <p class="text-xs text-slate-400 leading-relaxed">
+Kompilasi dokumentasi foto &amp; video sinematik berkualitas
+            tinggi yang masuk ke bank aset visual Saygon Group.
+</p> </div> <div class="pt-4 border-t border-white/5 flex justify-between items-center text-[10px] text-slate-500"> <span>Commercial Rights</span> <i class="fa-solid fa-film text-neonCoral"></i> </div> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-8" data-slide="7"> <div class="space-y-6"> <div class="space-y-2"> <span class="text-xs font-bold text-neonLime uppercase tracking-widest font-mono">
+08 // Mutual Synergy
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Benefit Untuk Saygon Group
+</h2> </div> <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4"> <!-- Strategic Value --> <div class="p-6 rounded-2xl bg-cardDark border-l-2 border-l-neonLime border-y-white/5 border-r-white/5 space-y-4 hover-lift glow-lime"> <span class="text-xs font-bold uppercase tracking-wider text-neonLime font-mono">
+Strategic Value
+</span> <ul class="space-y-2.5 text-xs text-slate-400"> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonLime mt-1.5 shrink-0"></i>
+Akses ide kreatif yang fresh &amp; relevan dari kacamata
+            generasi Z.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonLime mt-1.5 shrink-0"></i>
+Penguatan penetrasi branding destinasi wisata Saygon secara
+            masif.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonLime mt-1.5 shrink-0"></i>
+Pasokan konten digital promosi yang berkelanjutan.
+</li> </ul> </div> <!-- Operational Value --> <div class="p-6 rounded-2xl bg-cardDark border-l-2 border-l-neonIndigo border-y-white/5 border-r-white/5 space-y-4 hover-lift glow-indigo"> <span class="text-xs font-bold uppercase tracking-wider text-neonIndigo font-mono">
+Operational Value
+</span> <ul class="space-y-2.5 text-xs text-slate-400"> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonIndigo mt-1.5 shrink-0"></i>
+Mendapatkan suplai aset desain kreatif siap pakai secara
+            reguler.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonIndigo mt-1.5 shrink-0"></i>
+Dokumentasi profesional siap pakai untuk promosi.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonIndigo mt-1.5 shrink-0"></i>
+Dukungan dinamis pada campaign marketing secara real-time.
+</li> </ul> </div> <!-- Long Term Value --> <div class="p-6 rounded-2xl bg-cardDark border-l-2 border-l-neonCoral border-y-white/5 border-r-white/5 space-y-4 hover-lift glow-coral"> <span class="text-xs font-bold uppercase tracking-wider text-neonCoral font-mono">
+Long Term Value
+</span> <ul class="space-y-2.5 text-xs text-slate-400"> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonCoral mt-1.5 shrink-0"></i>
+Penyediaan talent pipeline berkualitas tinggi dan teruji.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonCoral mt-1.5 shrink-0"></i>
+Masuknya berbagai ide inovasi orisinal baru ke dalam
+            internal.
+</li> <li class="flex items-start gap-2"> <i class="fa-solid fa-circle text-[6px] text-neonCoral mt-1.5 shrink-0"></i>
+Perpustakaan digital asset library eksklusif jangka panjang.
+</li> </ul> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-9" data-slide="8"> <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"> <!-- Left Column: Header --> <div class="lg:col-span-4 space-y-4"> <span class="text-xs font-bold text-neonIndigo uppercase tracking-widest font-mono">
+09 // Student Growth
+</span> <h2 class="font-outfit text-4xl md:text-5xl font-bold text-white tracking-tight">
+Benefit<br>Untuk Siswa
+</h2> <p class="text-sm text-slate-400 leading-relaxed">
+Ekosistem yang memberdayakan perkembangan diri siswa secara
+        progresif untuk menyambut standar karier masa depan mereka.
+</p> <div class="p-4 rounded-xl border border-white/5 bg-cardDark/50 text-xs text-slate-400"> <span class="text-white font-bold block mb-1">Motto Program:</span>
+Siswa tidak hanya belajar teori pasif, tetapi benar-benar
+        bekerja secara kolaboratif dalam ekosistem industri modern yang
+        lincah.
+</div> </div> <!-- Right Column: 4 Benefit Cards --> <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4"> <!-- Card 1: Pengalaman Nyata --> <div class="p-5 rounded-xl bg-cardDark border border-white/5 hover-lift glow-lime"> <div class="text-neonLime text-lg mb-2"> <i class="fa-solid fa-briefcase"></i> </div> <h4 class="font-outfit text-sm font-bold text-white mb-1">
+Pengalaman Nyata
+</h4> <p class="text-xs text-slate-400 leading-relaxed">
+Pengalaman kerja nyata berbasis proyek industri dengan
+          tantangan nyata.
+</p> </div> <!-- Card 2: Portofolio Profesional --> <div class="p-5 rounded-xl bg-cardDark border border-white/5 hover-lift glow-indigo"> <div class="text-neonIndigo text-lg mb-2"> <i class="fa-solid fa-folder-open"></i> </div> <h4 class="font-outfit text-sm font-bold text-white mb-1">
+Portofolio Profesional
+</h4> <p class="text-xs text-slate-400 leading-relaxed">
+Membangun portofolio industri bersertifikasi resmi yang diakui
+          klien.
+</p> </div> <!-- Card 3: Mastery Pitching --> <div class="p-5 rounded-xl bg-cardDark border border-white/5 hover-lift glow-lime"> <div class="text-neonLime text-lg mb-2"> <i class="fa-solid fa-chalkboard-user"></i> </div> <h4 class="font-outfit text-sm font-bold text-white mb-1">
+Mastery Pitching
+</h4> <p class="text-xs text-slate-400 leading-relaxed">
+Melatih kemampuan pitching, komunikasi bisnis &amp; presentasi
+          standar agensi.
+</p> </div> <!-- Card 4: Problem Solving --> <div class="p-5 rounded-xl bg-cardDark border border-white/5 hover-lift glow-coral"> <div class="text-neonCoral text-lg mb-2"> <i class="fa-solid fa-brain"></i> </div> <h4 class="font-outfit text-sm font-bold text-white mb-1">
+Problem Solving
+</h4> <p class="text-xs text-slate-400 leading-relaxed">
+Mengasah insting adaptabilitas dalam memecahkan masalah
+          industri kreatif.
+</p> </div> </div> </div> </div> <div class="slide-frame inactive w-full" id="slide-10" data-slide="9"> <div class="max-w-4xl mx-auto text-center space-y-8 py-8 relative"> <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-48 h-48 bg-neonLime/10 rounded-full blur-3xl pointer-events-none animate-glow-pulse"></div> <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/15 bg-white/5 text-slate-400 text-[10px] font-bold tracking-widest uppercase font-mono animate-fade-in-up delay-100"> <span class="w-1.5 h-1.5 rounded-full bg-neonLime"></span>
+Partnership Collaboration
+</span> <div class="space-y-4 animate-fade-in-up delay-200"> <h2 class="font-outfit text-5xl md:text-7xl font-extrabold text-white tracking-tight uppercase leading-none">
+LET'S BUILD<br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonLime via-emerald-400 to-neonIndigo">
+SOMETHING REAL
+</span> </h2> <p class="text-lg md:text-xl text-slate-400 font-light max-w-2xl mx-auto">
+Program ini bukan sekadar magang biasa. Ini adalah
+<span class="text-white font-medium">kolaborasi industri kreatif</span>
+untuk membangun aset digital, visual, dan pengalaman nyata
+        secara simultan.
+</p> </div> <div class="p-6 rounded-2xl bg-cardDark/80 border border-white/5 max-w-xl mx-auto space-y-2 animate-scale-in delay-300 hover-lift glow-lime"> <p class="text-xs text-slate-500 uppercase tracking-wider">
+Kami mengundang Saygon Group untuk menjadi bagian dari:
+</p> <h3 class="font-outfit text-lg font-bold text-white tracking-wider">
+SAYGON × DISKOMVIS CREATIVE LAB
+</h3> <p class="text-xs text-neonLime font-mono font-bold uppercase tracking-widest">
+Building Creative Impact Together
+</p> </div> <div class="pt-4 flex justify-center gap-8 text-xs text-slate-600 font-mono animate-fade-in-up delay-400"> <span>saygon.com</span> <span>•</span> <span>diskomvis.id</span> </div> </div> </div> </div> </main> <footer class="fixed bottom-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center"> <!-- Navigation Dots --> <div id="dotsContainer" class="flex gap-2">  </div> <!-- Arrow Navigation --> <div class="flex gap-3"> <button id="prevBtn" class="w-10 h-10 rounded-full bg-cardDark/80 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:border-neonLime/50 hover:bg-cardDark transition-all" aria-label="Previous slide"> <i class="fas fa-chevron-left text-sm"></i> </button> <button id="nextBtn" class="w-10 h-10 rounded-full bg-cardDark/80 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:border-neonLime/50 hover:bg-cardDark transition-all" aria-label="Next slide"> <i class="fas fa-chevron-right text-sm"></i> </button> </div> </footer>   </body></html>

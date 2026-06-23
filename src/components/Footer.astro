@@ -1,0 +1,38 @@
+---
+interface Props {
+  totalSlides: number;
+}
+
+const { totalSlides } = Astro.props;
+---
+
+<footer class="fixed bottom-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center">
+  <!-- Navigation Dots -->
+  <div id="dotsContainer" class="flex gap-2">
+    {Array.from({ length: totalSlides }, (_, i) => (
+      <button
+        class="dot w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 transition-all"
+        data-slide={i}
+        aria-label={`Go to slide ${i + 1}`}
+      />
+    ))}
+  </div>
+
+  <!-- Arrow Navigation -->
+  <div class="flex gap-3">
+    <button
+      id="prevBtn"
+      class="w-10 h-10 rounded-full bg-cardDark/80 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:border-neonLime/50 hover:bg-cardDark transition-all"
+      aria-label="Previous slide"
+    >
+      <i class="fas fa-chevron-left text-sm"></i>
+    </button>
+    <button
+      id="nextBtn"
+      class="w-10 h-10 rounded-full bg-cardDark/80 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:border-neonLime/50 hover:bg-cardDark transition-all"
+      aria-label="Next slide"
+    >
+      <i class="fas fa-chevron-right text-sm"></i>
+    </button>
+  </div>
+</footer>
